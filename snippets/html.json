@@ -31,7 +31,7 @@
             "\tC",
             "{{/if}}"
         ],
-        "description": "Expects: string. Updates the element’s innerHTML."
+        "description": "Expects: boolean"
     },
     "each": {
         "prefix": "#each",
@@ -40,7 +40,7 @@
             "<!-- $length is recommended. -->",
             "{{/each}}"
         ],
-        "description": "Expects: any"
+        "description": "Expects: Array | Object | number | string"
     },
     "v-on": {
         "prefix": "vOn",

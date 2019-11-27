@@ -87,7 +87,7 @@
         "description": "Yox.config.productionTip"
     },
     "extend": {
-        "prefix": "yoxExtend",
+        "prefix": "YoxExtend",
         "body": [
             "Yox.extend({",
             "\ttemplate:${1:template}",
@@ -139,9 +139,11 @@
     "filter": {
         "prefix": "YoxFilter",
         "body": [
-            "Yox.filter(${1:id}${2:, [definition]})"
+            "Yox.filter({",
+            "\t${1:definition}: function (value){${2:handle}}",
+            "})"
         ],
-        "description": "Yox.filter( id, [definition] )"
+        "description": "Yox.filter()"
     },
     "component": {
         "prefix": "YoxComponent",
@@ -388,10 +390,14 @@
         ],
         "description": "just a word"
     },
+
+
     "filters": {
         "prefix": "filters",
         "body": [
-            "filters"
+            "filters: {",
+            "\t${1:definition}: function (value){${2:handle}}",
+            "}"
         ],
         "description": "just a word"
     },
