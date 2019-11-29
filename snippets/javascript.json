@@ -24,6 +24,20 @@
         ],
         "description": "Yox.dom.addSpecialEvent"
     },
+    "yoxDomOn": {
+        "prefix": "Yox.dom.on",
+        "body": [
+            "Yox.dom.on(${1:element}, '${2:event}', ${3:listener})"
+        ],
+        "description": "Yox.dom.on"
+    },
+    "yoxDomOff": {
+        "prefix": "Yox.dom.on",
+        "body": [
+            "Yox.dom.off(${1:element}, '${2:event}', ${3:listener})"
+        ],
+        "description": "Yox.dom.off"
+    },
     "template": {
         "prefix": "template",
         "body": [
