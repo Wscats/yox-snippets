@@ -11,11 +11,18 @@
         "description": "template"
     },
     "mustache": {
-        "prefix": "{{",
+        "prefix": "{{}}",
         "body": [
             "{{$1}}"
         ],
         "description": "mustache"
+    },
+    "mustacheComment": {
+        "prefix": "{{!}}",
+        "body": [
+            "{{!$1}}"
+        ],
+        "description": "mustache comment"
     },
     "event": {
         "prefix": [
@@ -82,20 +89,20 @@
         ],
         "description": "model"
     },
-    "annotation": {
+    "singleLineComment": {
         "prefix": "<!--",
         "body": [
-            "<!-- ${1:annotation} -->"
+            "<!-- ${1:comment} -->"
         ],
-        "description": "annotation"
+        "description": "single line comment"
     },
-    "annotation2": {
+    "multilineComment": {
         "prefix": "<!--",
         "body": [
             "<!--",
-            "\t${1:annotation}",
+            "\t${1:comment}",
             "-->"
         ],
-        "description": "annotation2"
+        "description": "multiline comment"
     }
 }

@@ -27,6 +27,7 @@ Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, an
 | `Yox.dom.off` | `Yox.dom.off(element, event, listener)` |
 | `Yox.directive` | `Yox.directive(id, { bind: function (node, directive, vnode) {...} })` |
 | `Yox.component` | `Yox.component(id, {...})` |
+| `Yox.filter` | `Yox.filter(id, {...})` |
 | `Yox.transition` | `Yox.transition(id, { leave: function (node) {...} })` |
 | `template` | `template: "..."` |
 | `name` | `name: "..."` |
@@ -39,6 +40,10 @@ Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, an
 | `watchers` | `watchers: { definition: function (value) {...} }` |
 | `transitions` | `transitions: { enter: function (node) {...} }` |
 | `directives` | `directives: { definition: function (value) {...} }` |
+| `events` | `events: { definition: function (value) {...} }` |
+| `partials` | `partials: {...}` |
+| `propTypes` | `propTypes: {...}` |
+| `components` | `components: {...}` |
 | `beforeCreate` | `beforeCreate: function () {...}` |
 | `afterCreate` | `afterCreate: function () {...}` |
 | `beforeMount` | `beforeMount: function () {...}` |
@@ -47,17 +52,14 @@ Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, an
 | `afterUpdate` | `afterUpdate: function () {...}` |
 | `beforeDestroy` | `beforeDestroy: function () {...}` |
 | `afterDestroy` | `afterDestroy: function () {...}` |
-| `events` | `events: { definition: function (value) {...} }` |
-| `partials` | `partials: {...}` |
-| `propTypes` | `propTypes: {...}` |
-| `components` | `components: {...}` |
 
 <br />
 
 | Prefix | HTML Snippet Content |
 | ------ | ------------ |
 | `template` | `<template>...</template>` |
-| `{{` | `{{...}}` |
+| `{{}}` | `{{...}}` |
+| `{{!}}` | `{{!...}}` |
 | `on-event` | `on-...=...` |
 | `o-directive` | `o-...=...` |
 | `transition` | `transition="..."` |

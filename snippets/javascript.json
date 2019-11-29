@@ -55,6 +55,13 @@
         ],
         "description": "Yox.component"
     },
+    "yoxFilter": {
+        "prefix": "Yox.filter",
+        "body": [
+            "Yox.filter(${1:element}, {})"
+        ],
+        "description": "Yox.filter"
+    },
     "yoxTransition": {
         "prefix": "Yox.transition",
         "body": [

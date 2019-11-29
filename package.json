@@ -33,17 +33,7 @@
 		"Programming Languages",
 		"Snippets"
 	],
-	"activationEvents": [
-		"onCommand:extension.helloWorld"
-	],
-	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
-			}
-		],
 		"snippets": [
 			{
 				"language": "javascript",
