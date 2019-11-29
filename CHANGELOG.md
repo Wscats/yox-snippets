@@ -1,9 +1,14 @@
 # Change Log
 
-All notable changes to the "yox-extension" extension will be documented in this file.
+All notable changes to the `Yox` extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- 2019.11.28 Update html sinppets
+- 2019.11.29 Update javascript sinppets
 
-## [Unreleased]
+# Unreleased
 
-- Initial release
+- Add syntax highlight
+- Add css snippets
+- Change the extension logo
+- Update readme
+- Supported more languages

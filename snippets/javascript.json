@@ -32,7 +32,7 @@
         "description": "Yox.dom.on"
     },
     "yoxDomOff": {
-        "prefix": "Yox.dom.on",
+        "prefix": "Yox.dom.off",
         "body": [
             "Yox.dom.off(${1:element}, '${2:event}', ${3:listener})"
         ],

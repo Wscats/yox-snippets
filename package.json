@@ -1,15 +1,22 @@
 {
 	"name": "yox",
-	"displayName": "yox",
-	"description": "yox",
+	"displayName": "Yox",
+	"description": "This extension adds Yox Code Snippets into Visual Studio Code.",
 	"icon": "public/logo.png",
-	"version": "0.0.1",
+	"author": {
+		"name": "Eno Yao",
+		"email": "kalone.cool@gmail.com",
+		"url": "https://github.com/Wscats"
+	},
+	"publisher": "Wscats",
+	"version": "0.0.2",
 	"license": "MIT",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
 	"keywords": [
 		"yox",
+		"html",
 		"javascript",
 		"snippet"
 	],
@@ -57,6 +64,7 @@
 		]
 	},
 	"scripts": {
+		"build": "vsce package",
 		"vscode:prepublish": "yarn run compile",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",

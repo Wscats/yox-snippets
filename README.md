@@ -4,11 +4,13 @@ This extension adds Yox Code Snippets into Visual Studio Code.
 
 这个插件基于最新的 Yox 的 API 添加了Code Snippets。
 
-<a href="https://marketplace.visualstudio.com/items?itemName=Wscats.eno"><img src="https://img.shields.io/badge/Download-+-orange" alt="Download" /></a>
-<a href="https://marketplace.visualstudio.com/items?itemName=Wscats.eno"><img src="https://img.shields.io/badge/Macketplace-v2.00-brightgreen" alt="Macketplace" /></a>
-<a href="https://github.com/Wscats/compile-hero"><img src="https://img.shields.io/badge/Github Page-Wscats-yellow" alt="Github Page" /></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=Wscats.yox"><img src="https://img.shields.io/badge/Download-+-orange" alt="Download" /></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=Wscats.yox"><img src="https://img.shields.io/badge/Macketplace-v2.00-brightgreen" alt="Macketplace" /></a>
+<a href="https://github.com/Wscats/yox-snippets"><img src="https://img.shields.io/badge/Github Page-Wscats-yellow" alt="Github Page" /></a>
 <a href="https://github.com/Wscats"><img src="https://img.shields.io/badge/Author-Eno Yao-blueviolet" alt="Eno Yao" /></a>
 <a href="https://github.com/Wscats"><img src="https://api.netlify.com/api/v1/badges/b652768b-1673-42cd-98dd-3fd807b2ebca/deploy-status" alt="Status" /></a>
+
+<img src="./public/2.gif" />
 
 # Snippets
 
@@ -20,98 +22,55 @@ Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, an
 | ------ | ------------ |
 | `import` | `import ... from ...` |
 | `newYox` | `new Yox({...})` |
-| `addSpecialEvent` | `Yox.dom.addSpecialEvent(...)` |
-| `addSpecialEvent` | `Yox.dom.addSpecialEvent(...)` |
+| `addSpecialEvent` | `Yox.dom.addSpecialEvent(id, function (element, listener) {...})` |
+| `Yox.dom.on` | `Yox.dom.on(element, event, listener)` |
+| `Yox.dom.off` | `Yox.dom.off(element, event, listener)` |
+| `Yox.directive` | `Yox.directive(id, { bind: function (node, directive, vnode) {...} })` |
+| `Yox.component` | `Yox.component(id, {...})` |
+| `Yox.transition` | `Yox.transition(id, { leave: function (node) {...} })` |
+| `template` | `template: "..."` |
+| `name` | `name: "..."` |
+| `model` | `model: "..."` |
+| `data` | `data: { key: value }` |
+| `data` | `data: function () {...}` |
+| `filters` | `filters: { definition: function (value) {...} }` |
+| `computed` | `computed: { definition: function (value) {...} }` |
+| `methods` | `methods: { definition: function (value) {...} }` |
+| `watchers` | `watchers: { definition: function (value) {...} }` |
+| `transitions` | `transitions: { enter: function (node) {...} }` |
+| `directives` | `directives: { definition: function (value) {...} }` |
+| `beforeCreate` | `beforeCreate: function () {...}` |
+| `afterCreate` | `afterCreate: function () {...}` |
+| `beforeMount` | `beforeMount: function () {...}` |
+| `afterMount` | `afterMount: function () {...}` |
+| `beforeUpdate` | `beforeUpdate: function () {...}` |
+| `afterUpdate` | `afterUpdate: function () {...}` |
+| `beforeDestroy` | `beforeDestroy: function () {...}` |
+| `afterDestroy` | `afterDestroy: function () {...}` |
+| `events` | `events: { definition: function (value) {...} }` |
+| `partials` | `partials: {...}` |
+| `propTypes` | `propTypes: {...}` |
+| `components` | `components: {...}` |
 
 <br />
 
 | Prefix | HTML Snippet Content |
 | ------ | ------------ |
-| `template` | `<template></template>` |
-| `script` | `<script></script>` |
-| `style` | `<style></style>` |
-| `vText` | `v-text=msg` |
-| `vHtml` | `v-html=html` |
-| `vShow` | `v-show` |
-| `vIf` | `v-if` |
-| `vElse` | `v-else` |
-| `vElseIf` | `v-else-if` |
-| `vForWithoutKey` | `v-for` |
-| `vFor` | `v-for="" :key=""` |
-| `vOn` | `v-on` |
-| `vBind` | `v-bind` |
-| `vModel` | `v-model` |
-| `vPre` | `v-pre` |
-| `vCloak` | `v-cloak` |
-| `vOnce` | `v-once` |
-| `key` | `:key` |
-| `ref` | `ref`|
-| `slotA` | `slot=""`|
-| `slotE` | `<slot></slot>`|
-| `slotScope` | `slot-scope=""`|
-| `component` | `<component :is=''></component>`|
-| `keepAlive` | `<keep-alive></keep-alive>` |
-| `transition` | `<transition></transition>` |
-| `transitionGroup` | `<transition-group></transition-group>` |
-| `enterClass` | `enter-class=''`|
-| `leaveClass` | `leave-class=''`|
-| `appearClass` | `appear-class=''`|
-| `enterToClass` | `enter-to-class=''`|
-| `leaveToClass` | `leave-to-class=''`|
-| `appearToClass` | `appear-to-class=''`|
-| `enterActiveClass` | `enter-active-class=''`|
-| `leaveActiveClass` | `leave-active-class=''`|
-| `appearActiveClass` | `appear-active-class=''`|
-| `beforeEnterEvent` | `@before-enter=''`|
-| `beforeLeaveEvent` | `@before-leave=''`|
-| `beforeAppearEvent` | `@before-appear=''`|
-| `enterEvent` | `@enter=''`|
-| `leaveEvent` | `@leave=''`|
-| `appearEvent` | `@appear=''`|
-| `afterEnterEvent` | `@after-enter=''`|
-| `afterLeaveEvent` | `@after-leave=''`|
-| `afterAppearEvent` | `@after-appear=''`|
-| `enterCancelledEvent` | `@enter-cancelled=''`|
-| `leaveCancelledEvent` | `@leave-cancelled=''`|
-| `appearCancelledEvent` | `@appear-cancelled=''`|
+| `template` | `<template>...</template>` |
+| `{{` | `{{...}}` |
+| `on-event` | `on-...=...` |
+| `o-directive` | `o-...=...` |
+| `transition` | `transition="..."` |
+| `#if` | `{{#if condition1}}...{{else if condition2}}...{{else}}...{{/if}}`|
+| `#each` | `{{#each items: item}}...{{/each}}` |
+| `#partial` | `{{#partial id}}...{{/partial}}` |
+| `model` | `model="..."` |
+| `<!--` | `<!-- ... -->` |
 
-<br />
+If you enjoy `Yox`, you should have it! Waiting for you in our heart！
 
-| Prefix | Vue Router Snippet Content |
-| ------ | ------------ |
-| `routerLink` | `<router-link></router-link>` |
-| `routerView` | `<router-view></router-view>` |
-| `to` | `to=""` |
-| `tag` | `tag=""` |
-| `newVueRouter` | `const router = newVueRouter({ })` |
-| `routerBeforeEach` | `router.beforeEach((to, from, next) => { }` |
-| `routerBeforeResolve` | `router.beforeResolve((to, from, next) => { }` |
-| `routerAfterEach` | `router.afterEach((to, from) => { }` |
-| `routerPush` | `router.push()` |
-| `routerReplace` | `router.replace()` |
-| `routerGo` | `router.back()` |
-| `routerBack` | `router.push()` |
-| `routerForward` | `router.forward()` |
-| `routerGetMatchedComponents` | `router.getMatchedComponents()` |
-| `routerResolve` | `router.resolve()` |
-| `routerAddRoutes` | `router.addRoutes()` |
-| `routerOnReady` | `router.onReady()` |
-| `routerOnError` | `router.onError()` |
-| `routes` | `routes: []` |
-| `beforeEnter` | `beforeEnter: (to, from, next) => { }` |
-| `beforeRouteEnter` | `beforeRouteEnter (to, from, next) { }` |
-| `beforeRouteLeave` | `beforeRouteLeave (to, from, next) { }` |
-| `scrollBehavior` | `scrollBehavior (to, from, savedPosition) { }` |
+If you think it's useful, you can leave us a [message and like it](https://marketplace.visualstudio.com/items?itemName=Wscats.yox&ssr=false#review-details), Your support is our driving force😀
 
-<br />
+# License
 
-| Prefix | Vuex Snippet Content |
-| ------ | ------------ |
-| `newVuexStore` | `const store = new Vuex.Store({ })` |
-
-| Prefix | Nuxt.js Snippet Content |
-| ------ | ------------ |
-| `nuxt` | `<nuxt/>` |
-| `nuxtChild` | `<nuxt-child/>` |
-| `nuxtLink` | `<nuxt-link to=""/>` |
-| `asyncData` | `asyncData() {}` |
+Yox Snippets is released under the [MIT](http://opensource.org/licenses/MIT).
