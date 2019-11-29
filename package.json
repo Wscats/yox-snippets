@@ -9,7 +9,7 @@
 		"url": "https://github.com/Wscats"
 	},
 	"publisher": "Wscats",
-	"version": "0.0.4",
+	"version": "0.0.6",
 	"license": "MIT",
 	"engines": {
 		"vscode": "^1.40.0"
@@ -20,6 +20,7 @@
 		"javascript",
 		"snippet"
 	],
+	"homepage": "https://github.com/wscats/yox-snippets#readme",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/wscats/yox-snippets"
@@ -62,6 +63,7 @@
 		"test": "yarn run compile && node ./node_modules/vscode/bin/test"
 	},
 	"devDependencies": {
+		"yox": "^1.0.0-alpha.118",
 		"typescript": "^3.3.1",
 		"vscode": "^1.1.28",
 		"tslint": "^5.12.1",
