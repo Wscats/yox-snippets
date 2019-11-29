@@ -38,6 +38,33 @@
         ],
         "description": "Yox.dom.off"
     },
+    "yoxDirective": {
+        "prefix": "Yox.directive",
+        "body": [
+            "Yox.directive(${1:element}, {",
+            "\tbind: function (node, directive, vnode) { ${2:handle} },",
+            "\tunbind: function (node, directive, vnode) { ${2:handle} }",
+            "})"
+        ],
+        "description": "Yox.directive"
+    },
+    "yoxComponent": {
+        "prefix": "Yox.component",
+        "body": [
+            "Yox.component(${1:element}, {})"
+        ],
+        "description": "Yox.component"
+    },
+    "yoxTransition": {
+        "prefix": "Yox.transition",
+        "body": [
+            "Yox.transition(${1:name}, {",
+            "\tenter: function (node) { ${2:handle} },",
+            "\tleave: function (node, done) { ${3:handle} }",
+            "})"
+        ],
+        "description": "Yox.transition"
+    },
     "template": {
         "prefix": "template",
         "body": [
@@ -45,14 +72,37 @@
         ],
         "description": "template"
     },
+    "name": {
+        "prefix": "name",
+        "body": [
+            "name: \"$1\""
+        ],
+        "description": "name"
+    },
+    "model": {
+        "prefix": "model",
+        "body": [
+            "model: \"$1\""
+        ],
+        "description": "model"
+    },
     "data": {
-        "prefix": "data",
+        "prefix": "data:{",
         "body": [
             "data: {",
             "\t${1:key}: ${2:value}",
             "}"
         ],
         "description": "data"
+    },
+    "dataFunction": {
+        "prefix": "data:function",
+        "body": [
+            "data: function () {",
+            "\treturn { ${1:data} }",
+            "}"
+        ],
+        "description": "dataFunction"
     },
     "filters": {
         "prefix": "filters",
@@ -81,6 +131,90 @@
         ],
         "description": "methods"
     },
+    "watchers": {
+        "prefix": "watchers",
+        "body": [
+            "watchers: {",
+            "\t${1:definition}: function (value) { ${2:handle} }",
+            "}"
+        ],
+        "description": "watchers"
+    },
+    "transitions": {
+        "prefix": "transitions",
+        "body": [
+            "transitions: {",
+            "\tenter: function (node) { ${1:handle} },",
+            "\tleave: function (node, done) { ${2:handle} }",
+            "}"
+        ],
+        "description": "transitions"
+    },
+    "directives": {
+        "prefix": "directives",
+        "body": [
+            "directives: {",
+            "\t${1:definition}: function (value) { ${2:handle} }",
+            "}"
+        ],
+        "description": "directives"
+    },
+    "beforeCreate": {
+        "prefix": "beforeCreate",
+        "body": [
+            "beforeCreate: function () { ${1:handle} }"
+        ],
+        "description": "beforeCreate"
+    },
+    "afterCreate": {
+        "prefix": "afterCreate",
+        "body": [
+            "afterCreate: function () { ${1:handle} }"
+        ],
+        "description": "afterCreate"
+    },
+    "beforeMount": {
+        "prefix": "beforeMount",
+        "body": [
+            "beforeMount: function () { ${1:handle} }"
+        ],
+        "description": "beforeMount"
+    },
+    "afterMount": {
+        "prefix": "afterMount",
+        "body": [
+            "afterMount: function () { ${1:handle} }"
+        ],
+        "description": "afterMount"
+    },
+    "beforeUpdate": {
+        "prefix": "beforeUpdate",
+        "body": [
+            "beforeUpdate: function () { ${1:handle} }"
+        ],
+        "description": "beforeUpdate"
+    },
+    "afterUpdate": {
+        "prefix": "afterUpdate",
+        "body": [
+            "afterUpdate: function () { ${1:handle} }"
+        ],
+        "description": "afterUpdate"
+    },
+    "beforeDestroy": {
+        "prefix": "beforeDestroy",
+        "body": [
+            "beforeDestroy: function () { ${1:handle} }"
+        ],
+        "description": "beforeDestroy"
+    },
+    "afterDestroy": {
+        "prefix": "afterDestroy",
+        "body": [
+            "afterDestroy: function () { ${1:handle} }"
+        ],
+        "description": "afterDestroy"
+    },
     "events": {
         "prefix": "events",
         "body": [
@@ -98,5 +232,27 @@
             "}"
         ],
         "description": "partials"
+    },
+    "propTypes": {
+        "prefix": "propTypes",
+        "body": [
+            "propTypes: {",
+            "\t${1:propName}: {",
+            "\t\ttype: ${2:type},",
+            "\t\tvalue: ${3:value},",
+            "\t\trequired: ${4:required}",
+            "\t}",
+            "}"
+        ],
+        "description": "propTypes"
+    },
+    "components": {
+        "prefix": "components",
+        "body": [
+            "components: {",
+            "\t${1:key}: ${2:value}",
+            "}"
+        ],
+        "description": "components"
     }
 }

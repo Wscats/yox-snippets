@@ -1,65 +1,117 @@
-# yox-extension README
+# Yox Snippets for Visual Studio Code
 
-This is the README for your extension "yox-extension". After writing up a brief description, we recommend including the following sections.
+This extension adds Yox Code Snippets into Visual Studio Code.
 
-## Features
+这个插件基于最新的 Yox 的 API 添加了Code Snippets。
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+<a href="https://marketplace.visualstudio.com/items?itemName=Wscats.eno"><img src="https://img.shields.io/badge/Download-+-orange" alt="Download" /></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=Wscats.eno"><img src="https://img.shields.io/badge/Macketplace-v2.00-brightgreen" alt="Macketplace" /></a>
+<a href="https://github.com/Wscats/compile-hero"><img src="https://img.shields.io/badge/Github Page-Wscats-yellow" alt="Github Page" /></a>
+<a href="https://github.com/Wscats"><img src="https://img.shields.io/badge/Author-Eno Yao-blueviolet" alt="Eno Yao" /></a>
+<a href="https://github.com/Wscats"><img src="https://api.netlify.com/api/v1/badges/b652768b-1673-42cd-98dd-3fd807b2ebca/deploy-status" alt="Status" /></a>
 
-For example if there is an image subfolder under your extension project workspace:
+# Snippets
 
-\!\[feature X\]\(images/feature-x.png\)
+Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, and press ENTER, then `Yox.component` appear on the screen.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+插件的 Snippets 如下表格所示，比如你可以键入 `Yox` 然后按上下键选中 `Yox.component` 再按 Enter 键，就输入了`Yox.component`了。
 
-## Requirements
+| Prefix | JavaScript Snippet Content |
+| ------ | ------------ |
+| `import` | `import ... from ...` |
+| `newYox` | `new Yox({...})` |
+| `addSpecialEvent` | `Yox.dom.addSpecialEvent(...)` |
+| `addSpecialEvent` | `Yox.dom.addSpecialEvent(...)` |
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+<br />
 
-## Extension Settings
+| Prefix | HTML Snippet Content |
+| ------ | ------------ |
+| `template` | `<template></template>` |
+| `script` | `<script></script>` |
+| `style` | `<style></style>` |
+| `vText` | `v-text=msg` |
+| `vHtml` | `v-html=html` |
+| `vShow` | `v-show` |
+| `vIf` | `v-if` |
+| `vElse` | `v-else` |
+| `vElseIf` | `v-else-if` |
+| `vForWithoutKey` | `v-for` |
+| `vFor` | `v-for="" :key=""` |
+| `vOn` | `v-on` |
+| `vBind` | `v-bind` |
+| `vModel` | `v-model` |
+| `vPre` | `v-pre` |
+| `vCloak` | `v-cloak` |
+| `vOnce` | `v-once` |
+| `key` | `:key` |
+| `ref` | `ref`|
+| `slotA` | `slot=""`|
+| `slotE` | `<slot></slot>`|
+| `slotScope` | `slot-scope=""`|
+| `component` | `<component :is=''></component>`|
+| `keepAlive` | `<keep-alive></keep-alive>` |
+| `transition` | `<transition></transition>` |
+| `transitionGroup` | `<transition-group></transition-group>` |
+| `enterClass` | `enter-class=''`|
+| `leaveClass` | `leave-class=''`|
+| `appearClass` | `appear-class=''`|
+| `enterToClass` | `enter-to-class=''`|
+| `leaveToClass` | `leave-to-class=''`|
+| `appearToClass` | `appear-to-class=''`|
+| `enterActiveClass` | `enter-active-class=''`|
+| `leaveActiveClass` | `leave-active-class=''`|
+| `appearActiveClass` | `appear-active-class=''`|
+| `beforeEnterEvent` | `@before-enter=''`|
+| `beforeLeaveEvent` | `@before-leave=''`|
+| `beforeAppearEvent` | `@before-appear=''`|
+| `enterEvent` | `@enter=''`|
+| `leaveEvent` | `@leave=''`|
+| `appearEvent` | `@appear=''`|
+| `afterEnterEvent` | `@after-enter=''`|
+| `afterLeaveEvent` | `@after-leave=''`|
+| `afterAppearEvent` | `@after-appear=''`|
+| `enterCancelledEvent` | `@enter-cancelled=''`|
+| `leaveCancelledEvent` | `@leave-cancelled=''`|
+| `appearCancelledEvent` | `@appear-cancelled=''`|
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+<br />
 
-For example:
+| Prefix | Vue Router Snippet Content |
+| ------ | ------------ |
+| `routerLink` | `<router-link></router-link>` |
+| `routerView` | `<router-view></router-view>` |
+| `to` | `to=""` |
+| `tag` | `tag=""` |
+| `newVueRouter` | `const router = newVueRouter({ })` |
+| `routerBeforeEach` | `router.beforeEach((to, from, next) => { }` |
+| `routerBeforeResolve` | `router.beforeResolve((to, from, next) => { }` |
+| `routerAfterEach` | `router.afterEach((to, from) => { }` |
+| `routerPush` | `router.push()` |
+| `routerReplace` | `router.replace()` |
+| `routerGo` | `router.back()` |
+| `routerBack` | `router.push()` |
+| `routerForward` | `router.forward()` |
+| `routerGetMatchedComponents` | `router.getMatchedComponents()` |
+| `routerResolve` | `router.resolve()` |
+| `routerAddRoutes` | `router.addRoutes()` |
+| `routerOnReady` | `router.onReady()` |
+| `routerOnError` | `router.onError()` |
+| `routes` | `routes: []` |
+| `beforeEnter` | `beforeEnter: (to, from, next) => { }` |
+| `beforeRouteEnter` | `beforeRouteEnter (to, from, next) { }` |
+| `beforeRouteLeave` | `beforeRouteLeave (to, from, next) { }` |
+| `scrollBehavior` | `scrollBehavior (to, from, savedPosition) { }` |
 
-This extension contributes the following settings:
+<br />
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+| Prefix | Vuex Snippet Content |
+| ------ | ------------ |
+| `newVuexStore` | `const store = new Vuex.Store({ })` |
 
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+| Prefix | Nuxt.js Snippet Content |
+| ------ | ------------ |
+| `nuxt` | `<nuxt/>` |
+| `nuxtChild` | `<nuxt-child/>` |
+| `nuxtLink` | `<nuxt-link to=""/>` |
+| `asyncData` | `asyncData() {}` |

@@ -8,24 +8,41 @@
             "\t</${1:div}>",
             "</template>"
         ],
-        "description": "template element"
+        "description": "template"
     },
     "mustache": {
         "prefix": "{{",
         "body": [
             "{{$1}}"
         ],
-        "description": "template element"
+        "description": "mustache"
     },
     "event": {
         "prefix": [
-            "on-event",
-            "#event"
+            "on-event"
         ],
         "body": [
             "on-${1:event}=\"${2:handle}\""
         ],
-        "description": "Expects: Function | Inline Statement"
+        "description": "event"
+    },
+    "directive": {
+        "prefix": [
+            "o-directive"
+        ],
+        "body": [
+            "o-${1:directive}=\"${2:handle}\""
+        ],
+        "description": "directive"
+    },
+    "transition": {
+        "prefix": [
+            "transition"
+        ],
+        "body": [
+            "transition=\"${1:name}\""
+        ],
+        "description": "transition"
     },
     "if": {
         "prefix": "#if",
@@ -38,7 +55,7 @@
             "\tC",
             "{{/if}}"
         ],
-        "description": "Expects: boolean"
+        "description": "if"
     },
     "each": {
         "prefix": "#each",
@@ -47,7 +64,7 @@
             "\t${3:item}",
             "{{/each}}"
         ],
-        "description": "Expects: Array | Object | number | string"
+        "description": "each"
     },
     "partial": {
         "prefix": "#partial",
@@ -56,13 +73,29 @@
             "\t$2",
             "{{/partial}}"
         ],
-        "description": "Expects: Array | Object | number | string"
+        "description": "partial"
+    },
+    "model": {
+        "prefix": "model",
+        "body": [
+            "model=\"$1\""
+        ],
+        "description": "model"
     },
     "annotation": {
-        "prefix": "<!-",
+        "prefix": "<!--",
         "body": [
             "<!-- ${1:annotation} -->"
         ],
-        "description": "Expects: String"
+        "description": "annotation"
+    },
+    "annotation2": {
+        "prefix": "<!--",
+        "body": [
+            "<!--",
+            "\t${1:annotation}",
+            "-->"
+        ],
+        "description": "annotation2"
     }
 }
