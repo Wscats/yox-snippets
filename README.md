@@ -2,9 +2,9 @@
 
 This extension adds Yox Code Snippets into Visual Studio Code.
 
-这个插件基于最新的 Yox 的 API 添加了Code Snippets。
+这个插件基于最新的 Yox 的 API 添加了 Code Snippets。
 
-<a href="https://marketplace.visualstudio.com/items?itemName=Wscats.yox"><img src="https://img.shields.io/badge/Download-+-orange" alt="Download" /></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=Wscats.yox"><img src="https://img.shields.io/badge/Download-100+-orange" alt="Download" /></a>
 <a href="https://marketplace.visualstudio.com/items?itemName=Wscats.yox"><img src="https://img.shields.io/badge/Macketplace-v2.00-brightgreen" alt="Macketplace" /></a>
 <a href="https://github.com/Wscats/yox-snippets"><img src="https://img.shields.io/badge/Github Page-Wscats-yellow" alt="Github Page" /></a>
 <a href="https://github.com/Wscats"><img src="https://img.shields.io/badge/Author-Eno Yao-blueviolet" alt="Eno Yao" /></a>
@@ -90,4 +90,4 @@ If you think it's useful, you can leave us a [message and like it](https://marke
 
 # License
 
-Yox Snippets is released under the [MIT](http://opensource.org/licenses/MIT).
+[Yox Snippets](https://marketplace.visualstudio.com/items?itemName=Wscats.yox) is released under the [MIT](http://opensource.org/licenses/MIT).
