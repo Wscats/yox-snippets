@@ -72,6 +72,55 @@
         ],
         "description": "Yox.transition"
     },
+    "yoxWatch": {
+        "prefix": "Yox.watch",
+        "body": [
+            "Yox.watch(${1:keypath}, ${2:watcher}, ${3.immediate})"
+        ],
+        "description": "Yox.watch"
+    },
+    "yoxUnWatch": {
+        "prefix": "Yox.unwatch",
+        "body": [
+            "Yox.unwatch(${1:keypath}, ${2:watcher})"
+        ],
+        "description": "Yox.unwatch"
+    },
+    "yoxForceUpdate": {
+        "prefix": "Yox.forceUpdate",
+        "body": [
+            "Yox.forceUpdate(${1:props})"
+        ],
+        "description": "Yox.forceUpdate"
+    },
+    "yoxCreateComponent": {
+        "prefix": "Yox.createComponent",
+        "body": [
+            "Yox.createComponent(${1:options}, ${2:vnode})"
+        ],
+        "description": "Yox.createComponent"
+    },
+    "yoxPartial": {
+        "prefix": "Yox.partial",
+        "body": [
+            "Yox.partial(${1:name}, ${2:partial})"
+        ],
+        "description": "Yox.partial"
+    },
+    "yoxGet": {
+        "prefix": "Yox.get",
+        "body": [
+            "Yox.get(${1:keypath}, ${2:defaultValue})"
+        ],
+        "description": "Yox.get"
+    },
+    "yoxSet": {
+        "prefix": "Yox.set",
+        "body": [
+            "Yox.set(${1:keypath}, ${2:value})"
+        ],
+        "description": "Yox.set"
+    },
     "template": {
         "prefix": "template",
         "body": [
@@ -261,5 +310,61 @@
             "}"
         ],
         "description": "components"
+    },
+    "this.$refs": {
+        "prefix": "this.$refs",
+        "body": [
+            "this.\\$refs$1"
+        ],
+        "description": "this.$refs"
+    },
+    "this.$el": {
+        "prefix": "this.$el",
+        "body": [
+            "this.\\$el$1"
+        ],
+        "description": "this.$el"
+    },
+    "this.$vnode": {
+        "prefix": "this.$vnode",
+        "body": [
+            "this.\\$vnode$1"
+        ],
+        "description": "this.$vnode"
+    },
+    "this.$template": {
+        "prefix": "this.$template",
+        "body": [
+            "this.\\$template$1"
+        ],
+        "description": "this.$template"
+    },
+    "this.$observer": {
+        "prefix": "this.$observer",
+        "body": [
+            "this.\\$observer$1"
+        ],
+        "description": "this.$observer"
+    },
+    "this.$options": {
+        "prefix": "this.$options",
+        "body": [
+            "this.\\$options$1"
+        ],
+        "description": "this.$options"
+    },
+    "this.$emitter": {
+        "prefix": "this.$emitter",
+        "body": [
+            "this.\\$emitter$1"
+        ],
+        "description": "this.$emitter"
+    },
+    "console.log": {
+        "prefix": "console.log",
+        "body": [
+            "console.log($1)"
+        ],
+        "description": "console.log"
     }
 }

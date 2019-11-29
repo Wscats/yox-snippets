@@ -29,6 +29,14 @@ Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, an
 | `Yox.component` | `Yox.component(id, {...})` |
 | `Yox.filter` | `Yox.filter(id, {...})` |
 | `Yox.transition` | `Yox.transition(id, { leave: function (node) {...} })` |
+| `Yox.watch` | `Yox.watch(keypath, watcher, immediate)` |
+| `Yox.unwatch` | `Yox.unwatch(keypath, watcher)` |
+| `Yox.watch` | `Yox.watch(keypath, watcher, immediate)` |
+| `Yox.forceUpdate` | `Yox.forceUpdate(props)` |
+| `Yox.createComponent` | `Yox.watch(options, vnode)` |
+| `Yox.partial` | `Yox.partial(name, partial)` |
+| `Yox.get` | `Yox.get(keypath, defaultValue)` |
+| `Yox.set` | `Yox.set(keypath, value)` |
 | `template` | `template: "..."` |
 | `name` | `name: "..."` |
 | `model` | `model: "..."` |
@@ -52,6 +60,13 @@ Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, an
 | `afterUpdate` | `afterUpdate: function () {...}` |
 | `beforeDestroy` | `beforeDestroy: function () {...}` |
 | `afterDestroy` | `afterDestroy: function () {...}` |
+| `this.$vnode` | `this.$vnode.xxx` |
+| `this.$template` | `this.$template.xxx` |
+| `this.$observer` | `this.$observer.xxx` |
+| `this.$options` | `this.$options.xxx` |
+| `this.$emitter` | `this.$emitter.xxx` |
+| `console.log` | `console.log(...)` |
+
 
 <br />
 
