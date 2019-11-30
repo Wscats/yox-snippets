@@ -7,5 +7,6 @@ src/**
 **/tslint.json
 **/*.map
 **/*.ts
-logo.psd
+public/logo.psd
+public/logo.png
 test/**
