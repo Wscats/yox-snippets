@@ -66,6 +66,8 @@ Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, an
 | `this.$options` | `this.$options.xxx` |
 | `this.$emitter` | `this.$emitter.xxx` |
 | `console.log` | `console.log(...)` |
+| `preventDefault` | `preventDefault()` |
+| `stopPropagation` | `stopPropagation()` |
 
 
 <br />

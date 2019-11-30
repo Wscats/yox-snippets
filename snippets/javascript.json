@@ -366,5 +366,21 @@
             "console.log($1)"
         ],
         "description": "console.log"
-    }
+    },
+    "preventDefault": {
+        "prefix": "preventDefault",
+        "body": [
+            "preventDefault();",
+            "$1"
+        ],
+        "description": "preventDefault"
+    },
+    "stopPropagation": {
+        "prefix": "stopPropagation",
+        "body": [
+            "stopPropagation();",
+            "$1"
+        ],
+        "description": "stopPropagation"
+    },
 }
