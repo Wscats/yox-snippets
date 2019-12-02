@@ -59,16 +59,16 @@ Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, an
 | `this.$refs` | `this.$refs.xxx` |
 | `this.$vnode` | `this.$vnode.xxx` |
 | `this.$options` | `this.$options.xxx` |
-| `this.nextTick` | `this.nextTick.xxx` |
-| `this.copy` | `this.copy.xxx` |
-| `this.toggle` | `this.toggle.xxx` |
-| `this.increase` | `this.increase.xxx` |
-| `this.decrease` | `this.decrease.xxx` |
-| `this.append` | `this.append.xxx` |
-| `this.prepend` | `this.prepend.xxx` |
-| `this.insert` | `this.insert.xxx` |
-| `this.remove` | `this.remove.xxx` |
-| `this.removeAt` | `this.removeAt.xxx` |
+| `this.nextTick` | `this.nextTick(task)` |
+| `this.copy` | `this.copy.(data, deep)` |
+| `this.toggle` | `this.toggle(keypath)` |
+| `this.increase` | `this.increase(keypath, step, max)` |
+| `this.decrease` | `this.decrease(keypath, step, min)` |
+| `this.append` | `this.append(keypath, item)` |
+| `this.prepend` | `this.prepend(keypath, item)` |
+| `this.insert` | `this.insert(keypath, item, index)` |
+| `this.remove` | `this.remove(keypath, item)` |
+| `this.removeAt` | `this.removeAt(keypath, index)` |
 | `console.log` | `console.log(...)` |
 | `preventDefault` | `event.prevent()` |
 | `stopPropagation` | `event.stop()` |
