@@ -19,7 +19,8 @@
         "prefix": "Yox.dom.addSpecialEvent",
         "body": [
             "Yox.dom.addSpecialEvent(\"${1:definition}\", {",
-            "\t${2:definition}: function (name, listener) { ${3:handle} }",
+            "\ton: function (element, listener) { ${2:handle} },",
+            "\toff: function (element, listener) { ${3:handle} }",
             "})"
         ],
         "description": "Yox.dom.addSpecialEvent"
@@ -27,28 +28,28 @@
     "yoxDomOn": {
         "prefix": "Yox.dom.on",
         "body": [
-            "Yox.dom.on(\"${1:name}\", \"${2:event}\", ${3:listener})"
+            "Yox.dom.on(${1:node}, \"${2:event}\", ${3:listener})"
         ],
         "description": "Yox.dom.on"
     },
     "yoxDomOff": {
         "prefix": "Yox.dom.off",
         "body": [
-            "Yox.dom.off(\"${1:name}\", \"${2:event}\", ${3:listener})"
+            "Yox.dom.off(${1:node}, \"${2:event}\", ${3:listener})"
         ],
         "description": "Yox.dom.off"
     },
     "yoxDomAddClass": {
         "prefix": "Yox.dom.addClass",
         "body": [
-            "Yox.dom.addClass(\"${1:node}\", \"${2:className}\")"
+            "Yox.dom.addClass(${1:node}, \"${2:className}\")"
         ],
         "description": "Yox.dom.addClass"
     },
     "yoxDomRemoveClass": {
         "prefix": "Yox.dom.removeClass",
         "body": [
-            "Yox.dom.removeClass(\"${1:node}\", \"${2:className}\")"
+            "Yox.dom.removeClass(${1:node}, \"${2:className}\")"
         ],
         "description": "Yox.dom.removeClass"
     },
@@ -283,103 +284,103 @@
         ],
         "description": "components"
     },
-    "this.$refs": {
-        "prefix": "this.$refs",
+    "this.refs": {
+        "prefix": "this.refs",
         "body": [
-            "this.\\$refs$1"
+            "this.refs$1"
         ],
-        "description": "this.$refs"
+        "description": "this.refs"
     },
-    "this.$el": {
-        "prefix": "this.$el",
+    "this.el": {
+        "prefix": "this.el",
         "body": [
-            "this.\\$el$1"
+            "this.el$1"
         ],
-        "description": "this.$el"
+        "description": "this.el"
     },
-    "this.$vnode": {
-        "prefix": "this.$vnode",
+    "this.vnode": {
+        "prefix": "this.vnode",
         "body": [
-            "this.\\$vnode$1"
+            "this.vnode$1"
         ],
-        "description": "this.$vnode"
+        "description": "this.vnode"
     },
-    "this.$options": {
-        "prefix": "this.$options",
+    "this.options": {
+        "prefix": "this.options",
         "body": [
-            "this.\\$options$1"
+            "this.options$1"
         ],
-        "description": "this.$options"
+        "description": "this.options"
     },
-    "this.$nextTick": {
-        "prefix": "this.$nextTick",
+    "this.nextTick": {
+        "prefix": "this.nextTick",
         "body": [
-            "this.\\$nextTick$1"
+            "this.nextTick$1"
         ],
-        "description": "this.$nextTick"
+        "description": "this.nextTick"
     },
-    "this.$copy": {
-        "prefix": "this.$copy",
+    "this.copy": {
+        "prefix": "this.copy",
         "body": [
-            "this.\\$copy$1"
+            "this.copy$1"
         ],
-        "description": "this.$copy"
+        "description": "this.copy"
     },
-    "this.$toggle": {
-        "prefix": "this.$toggle",
+    "this.toggle": {
+        "prefix": "this.toggle",
         "body": [
-            "this.\\$toggle$1"
+            "this.toggle$1"
         ],
-        "description": "this.$toggle"
+        "description": "this.toggle"
     },
-    "this.$increase": {
-        "prefix": "this.$increase",
+    "this.increase": {
+        "prefix": "this.increase",
         "body": [
-            "this.\\$increase$1"
+            "this.increase$1"
         ],
-        "description": "this.$increase"
+        "description": "this.increase"
     },
-    "this.$decrease": {
-        "prefix": "this.$decrease",
+    "this.decrease": {
+        "prefix": "this.decrease",
         "body": [
-            "this.\\$decrease$1"
+            "this.decrease$1"
         ],
-        "description": "this.$decrease"
+        "description": "this.decrease"
     },
-    "this.$append": {
-        "prefix": "this.$append",
+    "this.append": {
+        "prefix": "this.append",
         "body": [
-            "this.\\$append$1"
+            "this.append$1"
         ],
-        "description": "this.$append"
+        "description": "this.append"
     },
-    "this.$prepend": {
-        "prefix": "this.$prepend",
+    "this.prepend": {
+        "prefix": "this.prepend",
         "body": [
-            "this.\\$prepend$1"
+            "this.prepend$1"
         ],
-        "description": "this.$prepend"
+        "description": "this.prepend"
     },
-    "this.$insert": {
-        "prefix": "this.$insert",
+    "this.insert": {
+        "prefix": "this.insert",
         "body": [
-            "this.\\$insert$1"
+            "this.insert$1"
         ],
-        "description": "this.$insert"
+        "description": "this.insert"
     },
-    "this.$remove": {
-        "prefix": "this.$remove",
+    "this.remove": {
+        "prefix": "this.remove",
         "body": [
-            "this.\\$remove$1"
+            "this.remove$1"
         ],
-        "description": "this.$remove"
+        "description": "this.remove"
     },
-    "this.$removeAt": {
-        "prefix": "this.$removeAt",
+    "this.removeAt": {
+        "prefix": "this.removeAt",
         "body": [
-            "this.\\$removeAt$1"
+            "this.removeAt$1"
         ],
-        "description": "this.$removeAt"
+        "description": "this.removeAt"
     },
     "console.log": {
         "prefix": "console.log",

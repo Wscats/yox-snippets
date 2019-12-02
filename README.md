@@ -23,8 +23,8 @@ Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, an
 | `import` | `import ... from ...` |
 | `newYox` | `new Yox({...})` |
 | `addSpecialEvent` | `Yox.dom.addSpecialEvent(name, function (name, listener) {...})` |
-| `Yox.dom.on` | `Yox.dom.on(name, event, listener)` |
-| `Yox.dom.off` | `Yox.dom.off(name, event, listener)` |
+| `Yox.dom.on` | `Yox.dom.on(node, event, listener)` |
+| `Yox.dom.off` | `Yox.dom.off(node, event, listener)` |
 | `Yox.dom.addClass` | `Yox.dom.addClass(node, className)` |
 | `Yox.dom.removeClass` | `Yox.dom.removeClass(node, className)` |
 | `Yox.directive` | `Yox.directive(name, { bind: function (node, directive, vnode) {...} })` |
@@ -55,18 +55,18 @@ Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, an
 | `afterUpdate` | `afterUpdate: function () {...}` |
 | `beforeDestroy` | `beforeDestroy: function () {...}` |
 | `afterDestroy` | `afterDestroy: function () {...}` |
-| `this.$vnode` | `this.$vnode.xxx` |
-| `this.$options` | `this.$options.xxx` |
-| `this.$nextTick` | `this.$nextTick.xxx` |
-| `this.$copy` | `this.$copy.xxx` |
-| `this.$toggle` | `this.$toggle.xxx` |
-| `this.$increase` | `this.$increase.xxx` |
-| `this.$decrease` | `this.$decrease.xxx` |
-| `this.$append` | `this.$append.xxx` |
-| `this.$prepend` | `this.$prepend.xxx` |
-| `this.$insert` | `this.$insert.xxx` |
-| `this.$remove` | `this.$remove.xxx` |
-| `this.$removeAt` | `this.$removeAt.xxx` |
+| `this.vnode` | `this.vnode.xxx` |
+| `this.options` | `this.options.xxx` |
+| `this.nextTick` | `this.nextTick.xxx` |
+| `this.copy` | `this.copy.xxx` |
+| `this.toggle` | `this.toggle.xxx` |
+| `this.increase` | `this.increase.xxx` |
+| `this.decrease` | `this.decrease.xxx` |
+| `this.append` | `this.append.xxx` |
+| `this.prepend` | `this.prepend.xxx` |
+| `this.insert` | `this.insert.xxx` |
+| `this.remove` | `this.remove.xxx` |
+| `this.removeAt` | `this.removeAt.xxx` |
 | `console.log` | `console.log(...)` |
 | `preventDefault` | `event.prevent()` |
 | `stopPropagation` | `event.stop()` |
