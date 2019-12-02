@@ -9,4 +9,5 @@ src/**
 **/*.ts
 public/logo.psd
 public/logo.png
+public/2.gif
 test/**

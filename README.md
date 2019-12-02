@@ -5,7 +5,7 @@ This extension adds Yox Code Snippets into Visual Studio Code.
 这个插件基于最新的 Yox 的 API 添加了 Code Snippets。
 
 <a href="https://marketplace.visualstudio.com/items?itemName=Wscats.yox"><img src="https://img.shields.io/badge/Download-100+-orange" alt="Download" /></a>
-<a href="https://marketplace.visualstudio.com/items?itemName=Wscats.yox"><img src="https://img.shields.io/badge/Macketplace-v1.00-brightgreen" alt="Macketplace" /></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=Wscats.yox"><img src="https://img.shields.io/badge/Macketplace-v0.1-brightgreen" alt="Macketplace" /></a>
 <a href="https://github.com/Wscats/yox-snippets"><img src="https://img.shields.io/badge/Github Page-Wscats-yellow" alt="Github Page" /></a>
 <a href="https://github.com/Wscats"><img src="https://img.shields.io/badge/Author-Eno Yao-blueviolet" alt="Eno Yao" /></a>
 <a href="https://github.com/Wscats"><img src="https://api.netlify.com/api/v1/badges/b652768b-1673-42cd-98dd-3fd807b2ebca/deploy-status" alt="Status" /></a>
@@ -14,9 +14,9 @@ This extension adds Yox Code Snippets into Visual Studio Code.
 
 # Snippets
 
-Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, and press ENTER, then `Yox.component` appear on the screen.
+Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, and press ENTER, then `Yox.component(name, {...})` appear on the screen.
 
-插件的 Snippets 如下表格所示，比如你可以键入 `Yox` 然后按上下键选中 `Yox.component` 再按 Enter 键，就输入了`Yox.component`了。
+插件的 Snippets 如下表格所示，比如你可以键入 `Yox` 然后按上下键选中 `Yox.component` 再按 Enter 键，就输入了`Yox.component(name, {...})`了。
 
 | Prefix | JavaScript Snippet Content |
 | ------ | ------------ |
