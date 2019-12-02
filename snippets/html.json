@@ -18,9 +18,9 @@
         "description": "mustache"
     },
     "mustacheComment": {
-        "prefix": "{{!}}",
+        "prefix": "{{!--}}",
         "body": [
-            "{{!$1}}"
+            "{{!-- $1 --}}"
         ],
         "description": "mustache comment"
     },

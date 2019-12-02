@@ -19,7 +19,7 @@
         "prefix": "Yox.dom.addSpecialEvent",
         "body": [
             "Yox.dom.addSpecialEvent(\"${1:definition}\", {",
-            "\t${2:definition}: function (element, listener) { ${3:handle} }",
+            "\t${2:definition}: function (name, listener) { ${3:handle} }",
             "})"
         ],
         "description": "Yox.dom.addSpecialEvent"
@@ -27,21 +27,35 @@
     "yoxDomOn": {
         "prefix": "Yox.dom.on",
         "body": [
-            "Yox.dom.on(${1:element}, '${2:event}', ${3:listener})"
+            "Yox.dom.on(\"${1:name}\", \"${2:event}\", ${3:listener})"
         ],
         "description": "Yox.dom.on"
     },
     "yoxDomOff": {
         "prefix": "Yox.dom.off",
         "body": [
-            "Yox.dom.off(${1:element}, '${2:event}', ${3:listener})"
+            "Yox.dom.off(\"${1:name}\", \"${2:event}\", ${3:listener})"
         ],
         "description": "Yox.dom.off"
+    },
+    "yoxDomAddClass": {
+        "prefix": "Yox.dom.addClass",
+        "body": [
+            "Yox.dom.addClass(\"${1:node}\", \"${2:className}\")"
+        ],
+        "description": "Yox.dom.addClass"
+    },
+    "yoxDomRemoveClass": {
+        "prefix": "Yox.dom.removeClass",
+        "body": [
+            "Yox.dom.removeClass(\"${1:node}\", \"${2:className}\")"
+        ],
+        "description": "Yox.dom.removeClass"
     },
     "yoxDirective": {
         "prefix": "Yox.directive",
         "body": [
-            "Yox.directive(${1:element}, {",
+            "Yox.directive(\"${1:name}\", {",
             "\tbind: function (node, directive, vnode) { ${2:handle} },",
             "\tunbind: function (node, directive, vnode) { ${2:handle} }",
             "})"
@@ -51,75 +65,33 @@
     "yoxComponent": {
         "prefix": "Yox.component",
         "body": [
-            "Yox.component(${1:element}, {})"
+            "Yox.component(\"${1:name}\", { ${2:options} })"
         ],
         "description": "Yox.component"
     },
     "yoxFilter": {
         "prefix": "Yox.filter",
         "body": [
-            "Yox.filter(${1:element}, {})"
+            "Yox.filter(\"${1:name}\", function (value) { ${2:handle} })"
         ],
         "description": "Yox.filter"
     },
     "yoxTransition": {
         "prefix": "Yox.transition",
         "body": [
-            "Yox.transition(${1:name}, {",
+            "Yox.transition(\"${1:name}\", {",
             "\tenter: function (node) { ${2:handle} },",
             "\tleave: function (node, done) { ${3:handle} }",
             "})"
         ],
         "description": "Yox.transition"
     },
-    "yoxWatch": {
-        "prefix": "Yox.watch",
-        "body": [
-            "Yox.watch(${1:keypath}, ${2:watcher}, ${3.immediate})"
-        ],
-        "description": "Yox.watch"
-    },
-    "yoxUnWatch": {
-        "prefix": "Yox.unwatch",
-        "body": [
-            "Yox.unwatch(${1:keypath}, ${2:watcher})"
-        ],
-        "description": "Yox.unwatch"
-    },
-    "yoxForceUpdate": {
-        "prefix": "Yox.forceUpdate",
-        "body": [
-            "Yox.forceUpdate(${1:props})"
-        ],
-        "description": "Yox.forceUpdate"
-    },
-    "yoxCreateComponent": {
-        "prefix": "Yox.createComponent",
-        "body": [
-            "Yox.createComponent(${1:options}, ${2:vnode})"
-        ],
-        "description": "Yox.createComponent"
-    },
     "yoxPartial": {
         "prefix": "Yox.partial",
         "body": [
-            "Yox.partial(${1:name}, ${2:partial})"
+            "Yox.partial(\"${1:name}\", ${2:partial})"
         ],
         "description": "Yox.partial"
-    },
-    "yoxGet": {
-        "prefix": "Yox.get",
-        "body": [
-            "Yox.get(${1:keypath}, ${2:defaultValue})"
-        ],
-        "description": "Yox.get"
-    },
-    "yoxSet": {
-        "prefix": "Yox.set",
-        "body": [
-            "Yox.set(${1:keypath}, ${2:value})"
-        ],
-        "description": "Yox.set"
     },
     "template": {
         "prefix": "template",
@@ -332,20 +304,6 @@
         ],
         "description": "this.$vnode"
     },
-    "this.$template": {
-        "prefix": "this.$template",
-        "body": [
-            "this.\\$template$1"
-        ],
-        "description": "this.$template"
-    },
-    "this.$observer": {
-        "prefix": "this.$observer",
-        "body": [
-            "this.\\$observer$1"
-        ],
-        "description": "this.$observer"
-    },
     "this.$options": {
         "prefix": "this.$options",
         "body": [
@@ -353,12 +311,75 @@
         ],
         "description": "this.$options"
     },
-    "this.$emitter": {
-        "prefix": "this.$emitter",
+    "this.$nextTick": {
+        "prefix": "this.$nextTick",
         "body": [
-            "this.\\$emitter$1"
+            "this.\\$nextTick$1"
         ],
-        "description": "this.$emitter"
+        "description": "this.$nextTick"
+    },
+    "this.$copy": {
+        "prefix": "this.$copy",
+        "body": [
+            "this.\\$copy$1"
+        ],
+        "description": "this.$copy"
+    },
+    "this.$toggle": {
+        "prefix": "this.$toggle",
+        "body": [
+            "this.\\$toggle$1"
+        ],
+        "description": "this.$toggle"
+    },
+    "this.$increase": {
+        "prefix": "this.$increase",
+        "body": [
+            "this.\\$increase$1"
+        ],
+        "description": "this.$increase"
+    },
+    "this.$decrease": {
+        "prefix": "this.$decrease",
+        "body": [
+            "this.\\$decrease$1"
+        ],
+        "description": "this.$decrease"
+    },
+    "this.$append": {
+        "prefix": "this.$append",
+        "body": [
+            "this.\\$append$1"
+        ],
+        "description": "this.$append"
+    },
+    "this.$prepend": {
+        "prefix": "this.$prepend",
+        "body": [
+            "this.\\$prepend$1"
+        ],
+        "description": "this.$prepend"
+    },
+    "this.$insert": {
+        "prefix": "this.$insert",
+        "body": [
+            "this.\\$insert$1"
+        ],
+        "description": "this.$insert"
+    },
+    "this.$remove": {
+        "prefix": "this.$remove",
+        "body": [
+            "this.\\$remove$1"
+        ],
+        "description": "this.$remove"
+    },
+    "this.$removeAt": {
+        "prefix": "this.$removeAt",
+        "body": [
+            "this.\\$removeAt$1"
+        ],
+        "description": "this.$removeAt"
     },
     "console.log": {
         "prefix": "console.log",
@@ -370,7 +391,7 @@
     "preventDefault": {
         "prefix": "preventDefault",
         "body": [
-            "preventDefault();",
+            "event.prevent();",
             "$1"
         ],
         "description": "preventDefault"
@@ -378,9 +399,9 @@
     "stopPropagation": {
         "prefix": "stopPropagation",
         "body": [
-            "stopPropagation();",
+            "event.stop();",
             "$1"
         ],
         "description": "stopPropagation"
-    },
+    }
 }

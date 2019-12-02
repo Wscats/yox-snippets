@@ -22,21 +22,16 @@ Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, an
 | ------ | ------------ |
 | `import` | `import ... from ...` |
 | `newYox` | `new Yox({...})` |
-| `addSpecialEvent` | `Yox.dom.addSpecialEvent(id, function (element, listener) {...})` |
-| `Yox.dom.on` | `Yox.dom.on(element, event, listener)` |
-| `Yox.dom.off` | `Yox.dom.off(element, event, listener)` |
-| `Yox.directive` | `Yox.directive(id, { bind: function (node, directive, vnode) {...} })` |
-| `Yox.component` | `Yox.component(id, {...})` |
-| `Yox.filter` | `Yox.filter(id, {...})` |
-| `Yox.transition` | `Yox.transition(id, { leave: function (node) {...} })` |
-| `Yox.watch` | `Yox.watch(keypath, watcher, immediate)` |
-| `Yox.unwatch` | `Yox.unwatch(keypath, watcher)` |
-| `Yox.watch` | `Yox.watch(keypath, watcher, immediate)` |
-| `Yox.forceUpdate` | `Yox.forceUpdate(props)` |
-| `Yox.createComponent` | `Yox.watch(options, vnode)` |
+| `addSpecialEvent` | `Yox.dom.addSpecialEvent(name, function (name, listener) {...})` |
+| `Yox.dom.on` | `Yox.dom.on(name, event, listener)` |
+| `Yox.dom.off` | `Yox.dom.off(name, event, listener)` |
+| `Yox.dom.addClass` | `Yox.dom.addClass(node, className)` |
+| `Yox.dom.removeClass` | `Yox.dom.removeClass(node, className)` |
+| `Yox.directive` | `Yox.directive(name, { bind: function (node, directive, vnode) {...} })` |
+| `Yox.component` | `Yox.component(name, {...})` |
+| `Yox.filter` | `Yox.filter(name, function (value) {...})` |
+| `Yox.transition` | `Yox.transition(name, { leave: function (node) {...} })` |
 | `Yox.partial` | `Yox.partial(name, partial)` |
-| `Yox.get` | `Yox.get(keypath, defaultValue)` |
-| `Yox.set` | `Yox.set(keypath, value)` |
 | `template` | `template: "..."` |
 | `name` | `name: "..."` |
 | `model` | `model: "..."` |
@@ -61,13 +56,20 @@ Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, an
 | `beforeDestroy` | `beforeDestroy: function () {...}` |
 | `afterDestroy` | `afterDestroy: function () {...}` |
 | `this.$vnode` | `this.$vnode.xxx` |
-| `this.$template` | `this.$template.xxx` |
-| `this.$observer` | `this.$observer.xxx` |
 | `this.$options` | `this.$options.xxx` |
-| `this.$emitter` | `this.$emitter.xxx` |
+| `this.$nextTick` | `this.$nextTick.xxx` |
+| `this.$copy` | `this.$copy.xxx` |
+| `this.$toggle` | `this.$toggle.xxx` |
+| `this.$increase` | `this.$increase.xxx` |
+| `this.$decrease` | `this.$decrease.xxx` |
+| `this.$append` | `this.$append.xxx` |
+| `this.$prepend` | `this.$prepend.xxx` |
+| `this.$insert` | `this.$insert.xxx` |
+| `this.$remove` | `this.$remove.xxx` |
+| `this.$removeAt` | `this.$removeAt.xxx` |
 | `console.log` | `console.log(...)` |
-| `preventDefault` | `preventDefault()` |
-| `stopPropagation` | `stopPropagation()` |
+| `preventDefault` | `event.prevent()` |
+| `stopPropagation` | `event.stop()` |
 
 
 <br />
@@ -75,8 +77,8 @@ Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, an
 | Prefix | HTML Snippet Content |
 | ------ | ------------ |
 | `template` | `<template>...</template>` |
-| `{{}}` | `{{...}}` |
-| `{{!}}` | `{{!...}}` |
+| `{{}}` | `{{ ... }}` |
+| `{{!--}}` | `{{!-- ... --}}` |
 | `on-event` | `on-...=...` |
 | `o-directive` | `o-...=...` |
 | `transition` | `transition="..."` |
