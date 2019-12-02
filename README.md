@@ -55,8 +55,10 @@ Including most of the API of Yox. You can type `Yox`, choose `Yox.component`, an
 | `afterUpdate` | `afterUpdate: function () {...}` |
 | `beforeDestroy` | `beforeDestroy: function () {...}` |
 | `afterDestroy` | `afterDestroy: function () {...}` |
-| `this.vnode` | `this.vnode.xxx` |
-| `this.options` | `this.options.xxx` |
+| `this.$el` | `this.$el.xxx` |
+| `this.$refs` | `this.$refs.xxx` |
+| `this.$vnode` | `this.$vnode.xxx` |
+| `this.$options` | `this.$options.xxx` |
 | `this.nextTick` | `this.nextTick.xxx` |
 | `this.copy` | `this.copy.xxx` |
 | `this.toggle` | `this.toggle.xxx` |

@@ -284,33 +284,33 @@
         ],
         "description": "components"
     },
-    "this.refs": {
-        "prefix": "this.refs",
+    "this.$refs": {
+        "prefix": "this.$refs",
         "body": [
-            "this.refs$1"
+            "this.$refs$1"
         ],
-        "description": "this.refs"
+        "description": "this.$refs"
     },
-    "this.el": {
-        "prefix": "this.el",
+    "this.$el": {
+        "prefix": "this.$el",
         "body": [
-            "this.el$1"
+            "this.$el$1"
         ],
-        "description": "this.el"
+        "description": "this.$el"
     },
-    "this.vnode": {
-        "prefix": "this.vnode",
+    "this.$vnode": {
+        "prefix": "this.$vnode",
         "body": [
-            "this.vnode$1"
+            "this.$vnode$1"
         ],
-        "description": "this.vnode"
+        "description": "this.$vnode"
     },
-    "this.options": {
-        "prefix": "this.options",
+    "this.$options": {
+        "prefix": "this.$options",
         "body": [
-            "this.options$1"
+            "this.$options$1"
         ],
-        "description": "this.options"
+        "description": "this.$options"
     },
     "this.nextTick": {
         "prefix": "this.nextTick",
