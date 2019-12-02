@@ -287,98 +287,98 @@
     "this.$refs": {
         "prefix": "this.$refs",
         "body": [
-            "this.$refs$1"
+            "this.\\$refs$1"
         ],
         "description": "this.$refs"
     },
     "this.$el": {
         "prefix": "this.$el",
         "body": [
-            "this.$el$1"
+            "this.\\$el$1"
         ],
         "description": "this.$el"
     },
     "this.$vnode": {
         "prefix": "this.$vnode",
         "body": [
-            "this.$vnode$1"
+            "this.\\$vnode$1"
         ],
         "description": "this.$vnode"
     },
-    "this.$options": {
+    "this.options": {
         "prefix": "this.$options",
         "body": [
-            "this.$options$1"
+            "this.\\$options$1"
         ],
         "description": "this.$options"
     },
     "this.nextTick": {
         "prefix": "this.nextTick",
         "body": [
-            "this.nextTick$1"
+            "this.nextTick(${1:task})"
         ],
         "description": "this.nextTick"
     },
     "this.copy": {
         "prefix": "this.copy",
         "body": [
-            "this.copy$1"
+            "this.copy(${1:data}, ${2:deep})"
         ],
         "description": "this.copy"
     },
     "this.toggle": {
         "prefix": "this.toggle",
         "body": [
-            "this.toggle$1"
+            "this.toggle(${1:keypath})"
         ],
         "description": "this.toggle"
     },
     "this.increase": {
         "prefix": "this.increase",
         "body": [
-            "this.increase$1"
+            "this.increase(${1:keypath}, ${2:step}, ${3:max})"
         ],
         "description": "this.increase"
     },
     "this.decrease": {
         "prefix": "this.decrease",
         "body": [
-            "this.decrease$1"
+            "this.decrease(${1:keypath}, ${2:step}, ${3:min})"
         ],
         "description": "this.decrease"
     },
     "this.append": {
         "prefix": "this.append",
         "body": [
-            "this.append$1"
+            "this.append(${1:keypath}, ${2:item})"
         ],
         "description": "this.append"
     },
     "this.prepend": {
         "prefix": "this.prepend",
         "body": [
-            "this.prepend$1"
+            "this.prepend(${1:keypath}, ${2:item})"
         ],
         "description": "this.prepend"
     },
     "this.insert": {
         "prefix": "this.insert",
         "body": [
-            "this.insert$1"
+            "this.insert(${1:keypath}, ${2:item}, ${3:index})"
         ],
         "description": "this.insert"
     },
     "this.remove": {
         "prefix": "this.remove",
         "body": [
-            "this.remove$1"
+            "this.remove(${1:keypath}, ${2:item})"
         ],
         "description": "this.remove"
     },
     "this.removeAt": {
         "prefix": "this.removeAt",
         "body": [
-            "this.removeAt$1"
+            "this.removeAt(${1:keypath}, ${2:index})"
         ],
         "description": "this.removeAt"
     },
