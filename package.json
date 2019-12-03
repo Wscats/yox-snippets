@@ -9,7 +9,7 @@
 		"url": "https://github.com/Wscats"
 	},
 	"publisher": "Wscats",
-	"version": "0.1.6",
+	"version": "0.1.9",
 	"license": "MIT",
 	"engines": {
 		"vscode": "^1.40.0"
@@ -32,7 +32,8 @@
 	"categories": [
 		"Other",
 		"Programming Languages",
-		"Snippets"
+		"Snippets",
+		"Formatters"
 	],
 	"contributes": {
 		"snippets": [
@@ -51,6 +52,36 @@
 			{
 				"language": "html",
 				"path": "./snippets/html.json"
+			},
+			{
+				"language": "hbs",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "hbs",
+				"path": "./snippets/html.json"
+			}
+		],
+		"languages": [
+			{
+				"id": "hbs",
+				"extensions": [
+					".hbs"
+				],
+				"aliases": [
+					"html",
+					"javascript"
+				]
+			},
+			{
+				"id": "html",
+				"extensions": [
+					".hbs"
+				],
+				"aliases": [
+					"html",
+					"javascript"
+				]
 			}
 		]
 	},
