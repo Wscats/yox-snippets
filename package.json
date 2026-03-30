@@ -1,105 +1,107 @@
 {
-	"name": "yox",
-	"displayName": "Yox",
-	"description": "This extension adds Yox Code Snippets into Visual Studio Code.",
-	"icon": "public/logo2.png",
-	"author": {
-		"name": "Eno Yao",
-		"email": "kalone.cool@gmail.com",
-		"url": "https://github.com/Wscats"
-	},
-	"publisher": "Wscats",
-	"version": "0.1.9",
-	"license": "MIT",
-	"engines": {
-		"vscode": "^1.40.0"
-	},
-	"keywords": [
-		"yox",
-		"html",
-		"javascript",
-		"snippet"
-	],
-	"homepage": "https://github.com/wscats/yox-snippets#readme",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/wscats/yox-snippets"
-	},
-	"bugs": {
-		"url": "https://github.com/wscats/yox-snippets/issues",
-		"email": "kalone.cool@163.com"
-	},
-	"categories": [
-		"Other",
-		"Programming Languages",
-		"Snippets",
-		"Formatters"
-	],
-	"contributes": {
-		"snippets": [
-			{
-				"language": "javascript",
-				"path": "./snippets/javascript.json"
-			},
-			{
-				"language": "typescript",
-				"path": "./snippets/javascript.json"
-			},
-			{
-				"language": "html",
-				"path": "./snippets/javascript.json"
-			},
-			{
-				"language": "html",
-				"path": "./snippets/html.json"
-			},
-			{
-				"language": "hbs",
-				"path": "./snippets/javascript.json"
-			},
-			{
-				"language": "hbs",
-				"path": "./snippets/html.json"
-			}
-		],
-		"languages": [
-			{
-				"id": "hbs",
-				"extensions": [
-					".hbs"
-				],
-				"aliases": [
-					"html",
-					"javascript"
-				]
-			},
-			{
-				"id": "html",
-				"extensions": [
-					".hbs"
-				],
-				"aliases": [
-					"html",
-					"javascript"
-				]
-			}
-		]
-	},
-	"scripts": {
-		"start": "./publish.sh",
-		"build": "vsce package",
-		"vscode:prepublish": "yarn run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "yarn run compile && node ./node_modules/vscode/bin/test"
-	},
-	"devDependencies": {
-		"yox": "^1.0.0-alpha.118",
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.28",
-		"tslint": "^5.12.1",
-		"@types/node": "^10.12.21",
-		"@types/mocha": "^2.2.42"
-	}
+  "name": "yox",
+  "displayName": "Yox",
+  "description": "This extension adds Yox Code Snippets into Visual Studio Code.",
+  "icon": "public/logo2.png",
+  "author": {
+    "name": "Eno Yao",
+    "email": "kalone.cool@gmail.com",
+    "url": "https://github.com/Wscats"
+  },
+  "publisher": "Wscats",
+  "version": "0.1.9",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.40.0"
+  },
+  "keywords": [
+    "yox",
+    "html",
+    "javascript",
+    "snippet"
+  ],
+  "homepage": "https://github.com/wscats/yox-snippets#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wscats/yox-snippets"
+  },
+  "bugs": {
+    "url": "https://github.com/wscats/yox-snippets/issues",
+    "email": "kalone.cool@163.com"
+  },
+  "categories": [
+    "Other",
+    "Programming Languages",
+    "Snippets",
+    "Formatters"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/html.json"
+      },
+      {
+        "language": "hbs",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "hbs",
+        "path": "./snippets/html.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "hbs",
+        "extensions": [
+          ".hbs"
+        ],
+        "aliases": [
+          "html",
+          "javascript"
+        ]
+      },
+      {
+        "id": "html",
+        "extensions": [
+          ".hbs"
+        ],
+        "aliases": [
+          "html",
+          "javascript"
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "start": "./publish.sh",
+    "build": "vsce package",
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "yarn run compile && node ./node_modules/vscode/bin/test",
+    "lint": "eslint src --ext .ts,.tsx,.js,.jsx --fix",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "yox": "^1.0.0-alpha.118",
+    "typescript": "^3.3.1",
+    "vscode": "^1.1.28",
+    "tslint": "^5.12.1",
+    "@types/node": "^10.12.21",
+    "@types/mocha": "^2.2.42"
+  }
 }
