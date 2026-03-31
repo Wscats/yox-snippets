@@ -1,15 +1,21 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
+/**
+ * Yox Snippets - VSCode Extension entry point.
+ * Provides Yox framework code snippets.
+ *
+ * @author Eno Yao
+ */
+
 import * as vscode from 'vscode';
 
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
-export function activate(context: vscode.ExtensionContext) {
-
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-		console.log('Congratulations, your extension "yox-extension" is now active!');
+/**
+ * Called when the extension is activated.
+ * The extension is activated the first time a Yox snippet command is executed.
+ */
+export function activate(context: vscode.ExtensionContext): void {
+  console.log('Congratulations, your extension "yox-extension" is now active!');
 }
 
-// this method is called when your extension is deactivated
-export function deactivate() {}
+/** Called when the extension is deactivated. */
+export function deactivate(): void {
+  // No cleanup needed
+}
